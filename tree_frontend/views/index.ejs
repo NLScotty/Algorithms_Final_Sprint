@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index/Form Page</title>
+</head>
+<body>
+    
+    <div id="main_content_zone">
+        <h1>Welcome to the index page</h1>
+        <form method="post">
+            <tr>
+                <td>Enter Comma Seperated Values: </td>
+                <td>
+                 <input type ="values" id="values" name="values"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter in perfect order?: </td>
+                <td>
+                    <select name="perfect" id="perfect" name="perfect">
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </td>
+            </tr>
+            <input type = "submit"></input>
+        </form>
+    </div>
+    <form action="http://localhost:3000/previous-trees">
+        <input type="submit" value="View all previous trees" />
+    </form>
+
+</body>
+</html>
