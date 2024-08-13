@@ -60,7 +60,7 @@ app.get('/previous-trees', async(request, response) => {
     });
 })
 
-app.get('/previous-trees/:id', async(request, response) => {
+app.get('/previous-trees/id/:id', async(request, response) => {
     const fetch = await import('node-fetch');
     var result = await fetch.default(`http://localhost:8080/api/tree/${request.params.id}`, {
         method: 'GET',
@@ -92,7 +92,7 @@ app.get('/previous-trees/detailed', async(request, response) => {
     });
 })
 
-app.get('/previous-trees/detailed/:id', async(request, response) => {
+app.get('/previous-trees/detailed/id/:id', async(request, response) => {
     const fetch = await import('node-fetch');
     var result = await fetch.default(`http://localhost:8080/api/tree/detailed/${request.params.id}`, {
         method: 'GET',
